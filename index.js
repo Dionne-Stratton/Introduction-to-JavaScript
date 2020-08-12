@@ -113,7 +113,7 @@ function playGame(player) {
 
   let result = null;
 
-  if (player ==="rock" && computer === "rock" || player === "paper" && computer === "paper" || player === "scissors" && computer === "scissors") {
+  if (player === "rock" && computer === "rock" || player === "paper" && computer === "paper" || player === "scissors" && computer === "scissors") {
     result = "tie"
   } else if (player === "rock" && computer === "scissors" || player === "paper" && computer === "rock" || player === "scissors" && computer === "paper") {
     result = "win"
@@ -149,13 +149,13 @@ console.log(cm + " CM");
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
- function annoyingSong (number){
-   let = number
-   for (let i = number; i >= 0; i--) {
-      console.log(i)
- }
+function annoyingSong(number) {
+  let = number
+  for (let i = number; i >= 0; i--) {
+    console.log(i)
+  }
 }
- annoyingSong(10);
+annoyingSong(10);
 
 
 
@@ -168,22 +168,24 @@ console.log(cm + " CM");
 //70s should be Cs
 //60s should be D
 //and anything below 60 should be F
-let letter= "Letter Grade"
-let grade=76
+function gradeCalculator(grade) {
+  let letter = "Letter Grade"
 
-if (grade >= 90) {
-  letter = "A"
-} else if (grade >= 80) {
-  letter = "B"
-} else if (grade >= 70) {
-  letter = "C"
-} else if (grade >= 60) {
-  letter = "D"
-} else if (grade > 60) {
-  letter = "F"
+  if (grade >= 90) {
+    letter = "A"
+  } else if (grade >= 80) {
+    letter = "B"
+  } else if (grade >= 70) {
+    letter = "C"
+  } else if (grade >= 60) {
+    letter = "D"
+  } else if (grade > 60) {
+    letter = "F"
+  }
+  return letter;
 }
 
-console.log(letter)
+console.log(gradeCalculator(76))
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
@@ -197,3 +199,5 @@ console.log(letter)
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
+
+// see th game above
