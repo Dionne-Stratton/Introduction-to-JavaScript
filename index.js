@@ -100,7 +100,7 @@ console.log(dogFeeding(15, 1))
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
-function playGame(player, computer) {
+function playGame(player) {
 
   let computer = Math.random()
   if (computer <= 0.30) {
@@ -111,19 +111,20 @@ function playGame(player, computer) {
     computer = "scissors"
   }
 
-  let result = winOrLose(player, computer);
+  let result = null;
 
-  if (player = "rock" && computer = "rock" || player = "paper" && computer = "paper" || player = "scissors" && computer = "scissors" || ) {
+  if (player ==="rock" && computer === "rock" || player === "paper" && computer === "paper" || player === "scissors" && computer === "scissors") {
     result = "tie"
-  } else if (player = "rock" && computer = "scissors" || player = "paper" && computer = "rock" || player = "scissors" && computer = "paper") {
+  } else if (player === "rock" && computer === "scissors" || player === "paper" && computer === "rock" || player === "scissors" && computer === "paper") {
     result = "win"
-  } else if (player = "scissors" && computer = "rock" || player = "rock" && computer = "paper" || player = "paper" && computer = "scissors") {
+  } else if (player === "scissors" && computer === "rock" || player === "rock" && computer === "paper" || player === "paper" && computer === "scissors") {
     result = "lose"
   }
-  console.log(result)
-}
 
-console.log(playGame(paper))
+  return result;
+}
+var player = prompt("Choose");
+console.log(playGame(player))
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -148,10 +149,14 @@ console.log(cm + " CM");
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
-// function(annoyingSong)
-// for (let i = 99; i > 0; i--) {
-//   console.log(i);
-// }
+ function annoyingSong (number){
+   let = number
+   for (let i = number; i >= 0; i--) {
+      console.log(i)
+ }
+}
+ annoyingSong(10);
+
 
 
 
